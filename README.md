@@ -6,19 +6,16 @@ The default demo uses the S100 protein family (e.g., S100A4/A8/A9/A11), which ar
 Input: bulk RNA-seq matrix (patients × genes) and clinical data (time, event, etc.)
 Output: cluster assignments, 2D plots, and survival analysis by cluster
 Features
-🧬 Core Analysis Engines
+Core Analysis Engines
 1. ClusterEngine - Dimensionality Reduction & Clustering
-
 PCA dimensionality reduction for high-dimensional gene expression data
 K-means clustering to identify patient subgroups
 Interactive visualization with explained variance ratios
 Flexible gene selection (default: S100 protein family)
-
 pythoncluster_engine = ClusterEngine(n_components=2, n_clusters=2)
 X_reduced, cluster_labels = cluster_engine.fit_transform(expression_matrix)
 cluster_engine.plot_clusters(X_reduced, cluster_labels)
 2. ClinicalEngine - Survival Analysis & Prognosis
-
 Cox proportional hazards modeling for risk assessment
 Kaplan-Meier survival curves with statistical testing
 Clinical outcome prediction based on molecular clusters
@@ -28,12 +25,10 @@ pythonclinical_engine = ClinicalEngine()
 cox_model = clinical_engine.fit_predict(clinical_data, cluster_labels)
 clinical_engine.plot_survival(clinical_data, cluster_labels)
 3. ValidationEngine - Statistical Validation & Quality Control
-
 Statistical significance testing (Log-rank test for survival differences)
 Biomarker performance evaluation (ROC-AUC analysis)
 Clustering stability assessment (Adjusted Rand Index across multiple runs)
 Comprehensive validation reporting with confidence assessment
-
 python# Integrated validation pipeline
 validation_results = cluster_engine.validation_summary(
     X_reduced, expression_data, clinical_data, cluster_labels
@@ -96,7 +91,6 @@ S100A9: Calgranulin B
 S100A11: Calgizzarin
 
 These proteins are crucial in:
-
 Cancer progression and metastasis
 Inflammatory responses
 Tumor microenvironment modulation
@@ -104,17 +98,14 @@ Drug resistance mechanisms
 
 Validation Framework
 Statistical Validation
-
 Log-rank test: Assesses survival differences between clusters
 P-value interpretation: Statistical significance threshold (p < 0.05)
 
 Biomarker Performance
-
 ROC-AUC analysis: Evaluates diagnostic potential of individual genes
 Performance categories: Excellent (>0.9), Good (>0.8), Fair (>0.7), Poor (≤0.7)
 
 Clustering Stability
-
 Adjusted Rand Index: Measures consistency across multiple K-means runs
 Stability threshold: Stable clustering (ARI > 0.7)
 
@@ -145,19 +136,15 @@ Stable clustering (ARI > 0.7)
 Good biomarker performance (AUC > 0.7)
 
 Moderate Confidence Results
-
 Either statistical significance OR stable clustering
 Some biomarkers show diagnostic potential
-
 Low Confidence Results
-
 No statistical significance
 Unstable clustering
 Poor biomarker performance
 Recommendation: Increase sample size or try different parameters
 
 Applications
-
 Cancer subtype identification
 Prognostic biomarker discovery
 Drug response prediction
