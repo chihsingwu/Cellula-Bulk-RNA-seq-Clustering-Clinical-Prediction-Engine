@@ -23,8 +23,9 @@ This project provides a **modular engine** for rapid clustering and dimensionali
 
 ```bash
 pip install numpy pandas scikit-learn lifelines matplotlib
+pip install numpy pandas scikit-learn matplotlib lifelines umap-learn #vo3 version#
 ```
-pip install numpy pandas scikit-learn matplotlib lifelines umap-learn #vo3 version# 
+ 
 
 ```python
 from genomics_cluster_engine import ClusterEngine, ClinicalEngine
@@ -51,6 +52,11 @@ print(f"Result confidence: {validation['overall_assessment']['recommendation']}"
 - PCA dimensionality reduction for high-dimensional gene expression
 - K-means clustering to identify patient subgroups  
 - Integrated statistical validation (log-rank test, ROC-AUC, stability)
+-This project provides an advanced, modular engine for RNA-seq analysis. Version 0.3 introduces a dual-analysis framework that combines:High-Performance Non-linear
+High-Performance Non-linear Clustering (UMAP + K-Means): For discovering the most statistically robust patient subtypes.
+Interpretable Mechanistic Analysis (NMF): For uncovering the deep biological pathways that drive subtype differences.
+By combining UMAP's "What" (What are the patient groups?) with NMF's "Why" (Why are they different?), this engine empowers researchers to achieve both high statistical power and deep mechanistic insight from a single, unified platform.
+
 
 ### **ClinicalEngine** - Survival Analysis
 - Cox proportional hazards modeling
