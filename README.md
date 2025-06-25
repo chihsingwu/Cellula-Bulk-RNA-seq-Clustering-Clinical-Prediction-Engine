@@ -24,6 +24,7 @@ This project provides a **modular engine** for rapid clustering and dimensionali
 ```bash
 pip install numpy pandas scikit-learn lifelines matplotlib
 ```
+pip install numpy pandas scikit-learn matplotlib lifelines umap-learn **vo3 version*
 
 ```python
 from genomics_cluster_engine import ClusterEngine, ClinicalEngine
