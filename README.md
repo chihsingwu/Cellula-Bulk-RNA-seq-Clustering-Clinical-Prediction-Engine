@@ -7,7 +7,6 @@ This project provides a modular engine for rapid clustering and dimensionality r
 > A streamlined RNA-seq analysis pipeline with integrated survival modeling and statistical validation.
 
 ## 🎯 Overview
-
 This project provides a **modular engine** for rapid clustering and dimensionality reduction (PCA + K-means) of bulk RNA-seq data, with integrated clinical outcome prediction (Cox model, Kaplan-Meier curves).
 
 **Default focus:** S100 protein family (S100A4/A8/A9/A11) - key biomarkers in cancer progression  
@@ -18,6 +17,9 @@ This project provides a **modular engine** for rapid clustering and dimensionali
 | 📊 RNA-seq matrix (patients × genes) | 🎯 Patient clusters |
 | 🏥 Clinical data (time, event) | 📈 PCA visualization |
 | | 📉 Survival curves & statistics |
+
+![survival_plot](https://github.com/user-attachments/assets/584cf76a-a9bc-4f31-ae55-3f20bc9e6e8d)
+![umap_cluster_plot](https://github.com/user-attachments/assets/43faeaae-5f9d-48a9-8951-8832240f5ed7)
 
 ## 🚀 Quick Start
 
