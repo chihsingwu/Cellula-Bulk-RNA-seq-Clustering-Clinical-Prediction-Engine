@@ -1,4 +1,4 @@
-# Cellula-Bulk-RNA-seq-Clustering-Clinical-Prediction-Engine
+# Cellula-Bulk-RNA-seq-Clustering-Clinical-Prediction-Engine v03
 This project provides a modular engine for rapid clustering and dimensionality reduction (e.g., PCA + KMeans) of bulk RNA-seq data, with integrated clinical outcome prediction (Cox model, Kaplan-Meier curves).  The default demo uses the S100 protein family (e.g., S100A4/A8/A9/A11).
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
